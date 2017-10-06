@@ -1,5 +1,7 @@
 'use strict';
+
 var request = require('request');
+
 describe('The API', function () {
   it('should respond to a GET request at /api/posts/', function (done) {
     request.get(

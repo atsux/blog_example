@@ -1,6 +1,5 @@
 'use strict';
 
-
 const DB_URL_TEST = 'mongodb://127.0.0.1:27017/automate-it-test';
 const DB_URL_PROD = 'mongodb://127.0.0.1:27017/automate-it';
 

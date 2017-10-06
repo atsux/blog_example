@@ -2,11 +2,11 @@
   "name": "automate.it",
   "version": "0.0.1",
   "description": "blog",
-  "main": "src/backend/server.js",
+  "main": "app/server.js",
   "scripts": {
-    "start": "node src/backend/server.js",
-    "test": "./node_modules/.bin/jasmine-node --verbose --captureExceptions ./spec/",
-    "dev": "nodemon src/backend/server.js"
+    "start": "node app/server.js",
+    "test": "./node_modules/.bin/jasmine-node --verbose --captureExceptions  ./",
+    "dev": "nodemon app/server.js"
   },
   "author": "",
   "dependencies": {
