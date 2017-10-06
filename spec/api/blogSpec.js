@@ -4,7 +4,7 @@ describe('The API', function () {
   it('should respond to a GET request at /api/posts/', function (done) {
     request.get(
       {
-        'url': 'http://localhost:3000/api/posts/',
+        'url': 'http://localhost:3000/api/posts/test1',
         'json': true
       },
       function (err, res, body) {
