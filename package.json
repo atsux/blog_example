@@ -5,8 +5,9 @@
   "main": "app/server.js",
   "scripts": {
     "start": "node app/server.js",
-    "test": "./node_modules/.bin/jasmine-node --verbose --captureExceptions  ./",
-    "dev": "nodemon app/server.js"
+    "test": "jasmine",
+    "dev": "nodemon app/server.js",
+    "debug": "node-debug app/server.js"
   },
   "author": "",
   "dependencies": {
@@ -19,7 +20,7 @@
     "nunjucks":""
   },
   "devDependencies": {
-    "jasmine-node": "",
+    "jasmine": "",
     "nodemon": ""
   },
   "license": "ISC"
