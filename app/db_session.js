@@ -29,3 +29,7 @@ exports.connect = function(mode, done) {
 exports.get = function() {
   return state.db_connection;
 };
+
+exports.close = function() {
+  state.db_connection.close();
+};

@@ -10,20 +10,4 @@ app.get('/api/posts/:post_id', function(req, res) {
   });
 });
 
-DB.connect(DB.MODE_TEST, function(err) {
-  if (err) {
-    console.log('Unable to connect to database.');
-    process.exit(1);
-  } else {
-    app.listen(3000, function() {
-      console.log('Listening on port 3000')
-    });
-  }
-});
-
-process.on('SIGINT', function() {
-  DB.get().close(function () {
-    console.log('DB connection closed');
-    process.exit(0);
-  });
-});
+module.exports = app;
