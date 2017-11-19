@@ -15,11 +15,12 @@
     "request": "",
     "express": "^4.13.3",
     "mongodb": "^2.1.4",
-    "dateformat":"",
-    "gulp":"",
-    "nunjucks":""
+    "dateformat": "",
+    "nunjucks": ""
   },
   "devDependencies": {
+    "gulp": "",
+    "gulp-jasmine": "^2.4.2",
     "jasmine": "",
     "nodemon": ""
   },

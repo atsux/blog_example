@@ -14,7 +14,7 @@ describe('The API', function () {
         console.log('Unable to connect to database.');
         process.exit(1);
       };
-      server = app.listen(3000);
+      server = app.listen(3005);
       done();
     });
   });
@@ -28,11 +28,11 @@ describe('The API', function () {
     DB.close();
     done();
   });
-
+ 
   it('should respond to a GET request at /api/posts/', function (done) {
     request.get(
       {
-        'url': 'http://localhost:3000/api/posts/test1',
+        'url': 'http://localhost:3005/api/posts/test1',
         'json': true
       },
       function (err, res, body) {
