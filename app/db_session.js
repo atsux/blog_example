@@ -1,7 +1,7 @@
 'use strict';
 
 const DB_URL_TEST = 'mongodb://127.0.0.1:27017/automate-it-test';
-const DB_URL_PROD = 'mongodb://127.0.0.1:27017/automate-it';
+const DB_URL_PROD = process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/automate-it';
 
 exports.MODE_TEST = 1;
 exports.MODE_PRODUCTION = 2;
